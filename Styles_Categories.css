@@ -9,7 +9,7 @@
 
         #sidebar {
             width: 250px;
-            background-color: #006400;
+            background-color: #1197E1;
             color: white;
             height: 100vh;
             display: flex;
@@ -22,34 +22,44 @@
 			left: 0;
         }
 
+		img {
+			max-width: 720px;
+			max-height: 480px;
+		}
+
         #content {
             flex: 1;
             padding: 20px;
 			padding-left: 270px;
 			box-sizing: border-box;
             display: flex;
-            flex-wrap: wrap; /* Added flex-wrap to allow content to wrap to the next line */
+            flex-wrap: wrap; 
             justify-content: space-between;
         }
 
         /* Style the sidebar links */
         #sidebar a {
             display: block;
-            color: white;
+            color: black;
             padding: 15px;
             text-decoration: none;
             transition: background-color 0.3s;
         }
+		
+		h1{
+            color: #1147E1;
+            margin-bottom: 10px;
+        }
 
         /* Style the sidebar links on hover */
         #sidebar a:hover {
-            background-color: #004d00; /* Darker Green on Hover */
+            background-color: #1147E1; 
         }
 
         .product {
             text-align: center;
-            width: 45%; /* Adjusted width to allow two products per row */
-            margin-bottom: 20px; /* Added margin between rows */
+            width: 45%;
+            margin-bottom: 20px; 
         }
 
         .product-info {
@@ -75,7 +85,7 @@
         }
 
         .stars label {
-            font-size: 40px; /* Adjusted the font size */
+            font-size: 40px; 
             cursor: pointer;
         }
 

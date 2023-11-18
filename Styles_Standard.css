@@ -9,7 +9,7 @@
 
         #sidebar {
             width: 250px;
-            background-color: #006400;
+            background-color: #1197E1;
             color: white;
             height: 100vh;
             display: flex;
@@ -24,15 +24,20 @@
 
         #sidebar a {
             display: block;
-            color: white;
+            color: black;
             padding: 15px;
             text-decoration: none;
             transition: background-color 0.3s;
         }
 
         #sidebar a:hover {
-            background-color: #004d00;
+            background-color: #1147E1;
         }
+		
+		img {
+			max-width: 720px;
+			max-height: 480px;
+		}
 
         #content {
             flex: 1;
@@ -42,18 +47,18 @@
         }
 
         h1, h2, h3{
-            color: #006400;
+            color: #1147E1;
             margin-bottom: 10px;
         }
 		
 		h4 {
-			color: #666;
+			color: #1147E1;
 			font-weight: normal;
 			line-height: 0.5;
 		}
 
         p {
-            color: #666;
+            color: black;
             line-height: 1.6;
         }
 
@@ -83,7 +88,7 @@
         }
 
         .review-item p {
-            color: #777;
+            color: black;
         }
 
         /* Style the categories list */
@@ -98,13 +103,13 @@
         }
 
         #content ul li a {
-            color: #006400;
+            color: black;
             text-decoration: none;
             transition: color 0.3s;
         }
 
         #content ul li a:hover {
-            color: #004d00;
+            color: #1197E1;
         }
 
         /* Style the social media links */
@@ -113,19 +118,19 @@
             margin-right: 10px;
             color: #fff;
             text-decoration: none;
-            background-color: #006400;
+            background-color: #1197E1;
             padding: 10px 15px;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
 
         .social-media a:hover {
-            background-color: #004d00;
+            background-color: #1147E1;
         }
 
-        form input[type="submit"], form input[type="reset"]{
+        form input[type="submit"], form input[type="reset"], button{
             padding: 10px 20px;
-            background-color: #006400;
+            background-color: #1197E1;
             color: white;
             border: none;
             cursor: pointer;
@@ -133,6 +138,6 @@
             transition: background-color 0.3s;
         }
 
-        form input[type="submit"]:hover, form input[type="reset"]:hover {
-            background-color: #004d00;
+        form input[type="submit"]:hover, form input[type="reset"]:hover, button:hover {
+            background-color: #1147E1;
         }
