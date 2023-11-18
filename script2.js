@@ -1,10 +1,10 @@
   var ratedProductsInfo = document.getElementById('rated-products-info');
 
         function clearRatings() {
-            // Clear ratings from localStorage
+     
             localStorage.removeItem('ratings');
             
-            // Clear the displayed rated products
+           
             ratedProductsInfo.innerHTML = '<p>No products rated.</p>';
         }
 
@@ -19,7 +19,7 @@
                         <p>${product.description}</p>
                         <p>Rating: ${product.rating}</p>
                         <div class="stars">
-                            <!-- Add stars/rating input here -->
+                         
                         </div>
                     </div>
                 `;
