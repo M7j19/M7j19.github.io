@@ -1,15 +1,10 @@
-  document.addEventListener("DOMContentLoaded", function () {
-            var images = [
-                "img/nothing.jpg",
-          "img/Macbook_air.jpg",
-             "img/CanonS10.jpg",
-                // Add more image URLs as needed
-            ];
+   document.addEventListener("DOMContentLoaded", function () {
+            var slides = document.querySelectorAll('.fade');
             var index = 0;
-            var reviewImage = document.getElementById("review-image");
 
             setInterval(function () {
-                index = (index + 1) % images.length;
-                reviewImage.src = images[index];
+                slides[index].style.display = 'none';
+                index = (index + 1) % slides.length;
+                slides[index].style.display = 'block';
             }, 1000);
         });
