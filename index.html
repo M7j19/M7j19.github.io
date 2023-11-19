@@ -7,10 +7,29 @@
     <title>The Techs</title>
 	<link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="Styles_Standard.css">
-	<style>
-        .latest-reviews img {
+	 <style>
+        .slideshow-container {
+            position: relative;
             max-width: 100%;
+            margin: auto;
+        }
+
+        .fade {
+            display: none;
+            position: absolute;
+            width: 100%;
             height: auto;
+            animation: fade 1s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -30,20 +49,12 @@
 
         <!-- Latest Reviews Section -->
         <h2>Latest Reviews</h2>
-        <div class="latest-reviews">
-            <div class="review-item">
-                <img src="img/nothing.jpg" alt="Phone" id="review-image>    
-            </div>
-			
-     <div class="review-item">
-        <img src="img/Macbook_air.jpg" alt="Computers">
-       
+         <div class="slideshow-container">
+		 <img class="fade" src="img/nothing.jpg" alt="Phone">
+        <img class="fade" src="img/Macbook_air.jpg" alt="Computer">
+        <img class="fade" src="img/CanonS10.jpg" alt="Camera">
+        <!-- Add more images as needed -->
     </div>
-    <div class="review-item">
-        <img src="img/CanonS10.jpg" alt="Camera">
-       
-    </div>
-
         </div>
 
         <!-- Featured Categories Section -->
@@ -84,24 +95,7 @@
         </div>
 
     </div>
-	 <script>
-        // JavaScript code to rotate images every one second
-        document.addEventListener("DOMContentLoaded", function () {
-            var images = [
-                "img/nothing.jpg",
-                "img/Macbook_air.jpg",
-                "img/CanonS10.jpg",
-                // Add more image URLs as needed
-            ];
-            var index = 0;
-            var reviewImage = document.getElementById("review-image");
-
-            setInterval(function () {
-                index = (index + 1) % images.length;
-                reviewImage.src = images[index];
-            }, 1000);
-        });
-    </script>
+	<script src="script3.js"></script>
 </body>
 
 </html>
