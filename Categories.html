@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,8 +6,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Techs</title>
-	<link rel="icon" href="img/logo.png" type="image/png">
+    <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="Styles_Standard.css">
+    <style>
+	
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .fade {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            animation: fade 1s ease-in-out infinite;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -21,32 +48,33 @@
         <a href="rated.html">Rated</a>
         <a href="ContactUs.html">Contact us</a>  
     </div>
-	
+
+
     <div id="content">
         <h1>Welcome to Techs</h1>
         <p>This is the review area of the page. You can look around and review your favorite Techs here.</p>
 
         <!-- Latest Reviews Section -->
         <h2>Latest Reviews</h2>
-        <div class="latest-reviews">
-            <div class="review-item">
-                <img src="phone.jpg" alt="Phone">
-                <h3><a href="phone_review.html">Latest Smartphone Review</a></h3>
-                <p>Check out the features of the newest smartphone in the market.</p>
-            </div>
-            <!-- Add more review items as needed -->
+        <div class="slideshow-container">
+            <img class="fade" src="img/nothing.jpg" alt="Nothing">
+            <img class="fade" src="img/Macbook_air.jpg" alt="Macbook Air">
+            <img class="fade" src="img/CanonS10.jpg" alt="Canon S10">
+            
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </div>
 
-        <!-- Featured Categories Section -->
-        <h2>Featured Categories</h2>
-        <ul>
-            <li><a href="Categories_Television.html">Television</a></li>
-            <li><a href="Categories_Personal_Computer.html">Personal Computer</a></li>
-            <li><a href="Categories_Smartphone.html">Smartphone</a></li>
-            <li><a href="Categories_Digital_Camera.html">Digital Camera</a></li>
-        </ul>
+  
 
-        <!-- Popular Reviews Section -->
+    <!-- Featured Categories Section -->
+    <h2>Featured Categories</h2>
+    <ul>
+        <li><a href="Categories_Television.html">Television</a></li>
+        <li><a href="Categories_Personal_Computer.html">Personal Computer</a></li>
+        <li><a href="Categories_Smartphone.html">Smartphone</a></li>
+        <li><a href="Categories_Digital_Camera.html">Digital Camera</a></li>
+    </ul>
+         <!-- Popular Reviews Section -->
         <h2>Popular Reviews</h2>
         <div class="popular-reviews">
             <div class="review-item">
@@ -54,28 +82,29 @@
                 <h3><a href="laptop_review.html">Top Laptop Picks for 2023</a></h3>
                 <p>Discover the best laptops for work and entertainment.</p>
             </div>
-            <!-- Add more popular review items as needed -->
-        </div>
-
-        <!-- Tech Events or News Section -->
-        <h2>Tech Events & News</h2>
-        <div class="tech-news">
-            <div class="news-item">
-                <h3><a href="tech_event.html">Tech Expo 2023: What to Expect</a></h3>
-                <p>Get a sneak peek into the latest innovations showcased at the upcoming Tech Expo.</p>
-            </div>
-            <!-- Add more news items as needed -->
-        </div>
-
-        <!-- Connect with Us Section -->
-        <h2>Connect with Us</h2>
-        <div class="social-media">
-            <a href="https://twitter.com/yourtechreviews" target="_blank">Twitter</a>
-            <a href="https://www.facebook.com/yourtechreviews" target="_blank">Facebook</a>
-            <!-- Add more social media links as needed -->
-        </div>
-
     </div>
+
+    <!-- Tech Events or News Section -->
+    <h2>Tech Events & News</h2>
+    <div class="tech-news">
+        <div class="news-item">
+            <h3><a href="tech_event.html">Tech Expo 2023: What to Expect</a></h3>
+            <p>Get a sneak peek into the latest innovations showcased at the upcoming Tech Expo.</p>
+        </div>
+       
+    </div>
+
+  
+    <h2>Connect with Us</h2>
+    <div class="social-media">
+        <a href="https://twitter.com/yourtechreviews" target="_blank">Twitter</a>
+        <a href="https://www.facebook.com/yourtechreviews" target="_blank">Facebook</a>
+        
+    </div>
+
+	</div>
+
+    <script src="script3.js"></script>
 </body>
 
 </html>
