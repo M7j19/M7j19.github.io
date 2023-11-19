@@ -7,6 +7,12 @@
     <title>The Techs</title>
 	<link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="Styles_Standard.css">
+	<style>
+        .latest-reviews img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,20 +32,16 @@
         <h2>Latest Reviews</h2>
         <div class="latest-reviews">
             <div class="review-item">
-                <img src="img/nothing.jpg" alt="Phone" id="review-image>
-                <h3><a href="Categories_Smartphone.html">Latest Smartphone Review</a></h3>
-                <p>Check out the features of the newest smartphone in the market.</p>
+                <img src="img/nothing.jpg" alt="Phone" id="review-image>    
             </div>
+			
      <div class="review-item">
         <img src="img/Macbook_air.jpg" alt="Computers">
-        <h3><a href="Categories_Personal_Computer.html">Latest Personal Computers Review</a></h3>
-        <p>Explore the capabilities of the recently Laptops.</p>
+       
     </div>
-
     <div class="review-item">
         <img src="img/CanonS10.jpg" alt="Camera">
-        <h3><a href="Categories_Digital_Camera.html">Latest Camera Review</a></h3>
-        <p>Discover the advanced features of the new camera on the market.</p>
+       
     </div>
 
         </div>
@@ -58,8 +60,7 @@
         <div class="popular-reviews">
             <div class="review-item">
                 <img src="laptop.jpg" alt="Laptop">
-                <h3><a href="laptop_review.html">Top Laptop Picks for 2023</a></h3>
-                <p>Discover the best laptops for work and entertainment.</p>
+               
             </div>
             <!-- Add more popular review items as needed -->
         </div>
@@ -83,7 +84,24 @@
         </div>
 
     </div>
-	<script src="script3.js"></script>
+	 <script>
+        // JavaScript code to rotate images every one second
+        document.addEventListener("DOMContentLoaded", function () {
+            var images = [
+                "img/nothing.jpg",
+                "img/Macbook_air.jpg",
+                "img/CanonS10.jpg",
+                // Add more image URLs as needed
+            ];
+            var index = 0;
+            var reviewImage = document.getElementById("review-image");
+
+            setInterval(function () {
+                index = (index + 1) % images.length;
+                reviewImage.src = images[index];
+            }, 1000);
+        });
+    </script>
 </body>
 
 </html>
