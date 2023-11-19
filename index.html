@@ -7,8 +7,21 @@
     <title>The Techs</title>
     <link rel="icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="Styles_Standard.css">
-    <style>
-        
+  <style>
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .fade {
+            display: none;
+            position: absolute;
+            width: 100%;
+            height: auto;
+            animation: fade 1s ease-in-out infinite;
+        }
+
         @keyframes fade {
             from {
                 opacity: 0.4;
