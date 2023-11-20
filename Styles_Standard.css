@@ -62,13 +62,6 @@
             line-height: 1.6;
         }
 
-        /* Style the review items */
-        .review-item {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-
         
         /* Style the categories list */
         #content ul {
